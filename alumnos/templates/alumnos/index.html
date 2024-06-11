@@ -19,7 +19,11 @@
         {% endfor %}
     </ol>   
     
-    <img src="{% static 'alumnos/img/gatomalo.jpg' %}" alt="">
-    
+    <img src="{% static 'alumnos/img/gatomalo.webp' %}" alt="">
+
+    <!--aqui estoy trayendo alumnos de la base datos-->
+    {% for alumno in alumnos%}
+        {{alumno.rut}}, <br>{{alumno.nombre}} <br>
+    {% endfor %}
 </body>
 </html>
